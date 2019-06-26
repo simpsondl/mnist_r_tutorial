@@ -4,7 +4,7 @@ This tutorial implements the basic MNIST classification tutorial using the R int
 
 ## Read the tutorial
 
-The original tutorial is available (here)[https://keras.rstudio.com/] under the "MNIST Example" heading.
+The original tutorial is available [here](https://keras.rstudio.com/) under the "MNIST Example" heading.
 
 ## Clone the repository
 
