@@ -57,10 +57,12 @@ Now that the environments have been created and the data has been downloaded, th
 sbatch mnist.s
 ```
 
+Notice that this loads two modules, ```cudatoolkit/10.0``` and ```cudnn/cuda-10.0/7.50```; these specific versions are required for R to work correctly. There may be other versions that also work, but this configuration has been tested. 
+
 This will request a GPU node for 5 minutes and queue the job. You can check whether or not your job is running with ```squeue -u yourusername```. Once the job has completed, you should have several output files: ```slurm-XXXXXXX.out``` containing any printed output from the job (this will include training progress and a model summary), ```training_metrics.pdf``` containing a plot of the accuracy and loss values during training, and ```output.pdf``` containing MNIST example images with their labels and predictions. Download the PDF files to your computer for viewing with
 
 ```
 scp yourusername@hpcclustername.princeton.edu:~/mnist_r_tutorial/*pdf .
 ```
 
-Note that this command should be run from your computer (not the cluster), and you will need to change ```yourusername``` to your Princeton NetID and ```hpcclustername``` to Adroit or Tiger depending on which HPC cluster you are using. Finally, you can change the download location by changing ```.``` to a path of your choice.
+Note that this command should be run from your computer (not the cluster), and you will need to change ```yourusername``` to your Princeton NetID and ```hpcclustername``` to adroit or tiger depending on which HPC cluster you are using. Finally, you can change the download location by changing ```.``` to a path of your choice.
