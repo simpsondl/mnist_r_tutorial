@@ -7,7 +7,7 @@ if(length(new.pkgs)) stop(paste("Missing packages", new.pkgs,"\n"))
 
 # Load keras and save the mnist dataset
 library(keras)
-use_condaenv("mnist")
+use_condaenv("mnist", conda = "/usr/licensed/anaconda3/2019.3/bin/conda")
 
 mnist <- dataset_mnist()
 
