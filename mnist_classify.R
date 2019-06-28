@@ -60,7 +60,9 @@ metrics$epoch <- rep(1:30,4)
 pdf("training_metrics.pdf")
 ggplot(metrics,aes(epoch, value, col = variable)) + 
   facet_grid(acc ~ ., scales = "free_y") + 
-  geom_point() + geom_line()
+  geom_point() + geom_line() +
+  ggtitle("Training Metrics") +
+  theme_bw()
 dev.off()
 
 # Generate predictions on test data
