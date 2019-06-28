@@ -6,7 +6,7 @@ library(reshape2)
 library(ggplot2)
 
 # Let R know to use the created conda environment
-use_condaenv("mnist")
+use_condaenv("mnist", conda = "/usr/licensed/anaconda3/2019.3/bin/conda")
 
 # Extract training/testing images (x)/labels (y)
 x_train <- mnist$train$x
