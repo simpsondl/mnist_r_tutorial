@@ -22,7 +22,7 @@ This will create a conda environment with Tensorflow and Keras available (note t
 
 ```
 module load anaconda3
-conda create —name mnist python=3.6
+conda create —n mnist python=3.6
 conda activate mnist
 pip install tensorflow-gpu keras
 conda deactivate
